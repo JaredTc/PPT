@@ -76,8 +76,7 @@ html.dark-mode button{
       
   }
   .enlaces {
-    display: flex;
-    align-items: center;
+   
     color:  #000000;
 }
 html.enlaces a {

@@ -63,12 +63,13 @@ function checkwinner(userSel, cpuSel){
      else if(userSel == cpuSel){
        
         respuesta ="EMPATE";
-
+        
     } else{
         respuesta = "PERDISTE";
     }
     return respuesta;
 }
+
 //Metodo que retorna la solucion de la maquina
 function getCpuResponse() {
     let x = Math.floor(Math.random() * 3);
