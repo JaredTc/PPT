@@ -7,9 +7,12 @@ var lblFinal = document.getElementById("lbl-resultado");
 
 var lblPuntajeuser = document.getElementById("lbl-res-user");
 var lblPuntajeCpu = document.getElementById("lbl-res-cpu");
-var opciones = ["PIEDRA", "PAPEL", "TIJERA"];
+
 var puntajeUsuario = 0;
 var puntajeCpu = 0;
+
+var opciones = ["PIEDRA", "PAPEL", "TIJERA"];
+
 butPiedra.addEventListener("click", function () {
     startGame(butPiedra.value);
 });
@@ -25,13 +28,12 @@ function startGame(value) {
    let cpuSelection = getCpuResponse();
    let respuesta = checkwinner(userSelection,cpuSelection);
    
-
-   if(respuesta = "GANASTE"){
+        if(respuesta == "GANASTE"){
         puntajeUsuario++;
-
-   } else if(respuesta = "PERDISTE") {
-      puntajeCpu++;
-   }
+        }
+        else if(respuesta == "PERDISTE"){
+         puntajeCpu++;
+        }
    
    lblUser.innerHTML = opciones[userSelection];
    lblCpu.innerHTML = opciones[cpuSelection];
