@@ -3,7 +3,7 @@ body{
  margin: 0;
  font-size: x-large;
  font-family: 'ABeeZee', sans-serif;
- background-color: antiquewhite;
+ background-color: rgb(207, 207, 207);
 }
 button{
     background-color: #aaaaaa;
@@ -19,3 +19,18 @@ button:hover{
     background-color: #868585;
 }
 
+
+.dark-mode-button{
+    position:  absolute;
+    top: 20px;
+    left: 10px;
+    padding: 10px;
+    
+}
+
+html.dark-mode{
+    filter: invert(100%);
+}
+html.dark-mode button{
+    filter: invert(100%);
+}

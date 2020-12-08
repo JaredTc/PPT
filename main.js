@@ -23,11 +23,15 @@ butTijera.addEventListener("click", function () {
     startGame(butTijera.value);
 });
 
+
 function startGame(value) {
    let userSelection = value;
    let cpuSelection = getCpuResponse();
    let respuesta = checkwinner(userSelection,cpuSelection);
+    
    
+
+
         if(respuesta == "GANASTE"){
         puntajeUsuario++;
         }
