@@ -30,7 +30,7 @@ function startGame(value) {
    let respuesta = checkwinner(userSelection,cpuSelection);
     
    
-
+ 
 
         if(respuesta == "GANASTE"){
         puntajeUsuario++;

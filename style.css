@@ -14,7 +14,7 @@ button{
     
     
 }
-button:hover{
+ button:hover{
     cursor: pointer;
     background-color: #868585;
 }
@@ -33,4 +33,53 @@ html.dark-mode{
 }
 html.dark-mode button{
     filter: invert(100%);
+}
+.contenedor {
+    max-width: 1000px;
+    width: 90%;
+    margin: auto;
+    padding: 50px 0;
+  }
+  
+  nav {
+    background: #00000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 5px 5px;
+    border-radius: 5px;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+    -webkit-box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.16);
+            box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.16);
+  }
+  nav .logotipo {
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+  } 
+  .Switch {
+      background: #bebebe;
+      border-radius: 1000px;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      outline: none;
+
+      
+      
+  }
+  .enlaces {
+    display: flex;
+    align-items: center;
+    color:  #000000;
+}
+html.enlaces a {
+    margin-right: 40px;
 }
