@@ -57,6 +57,7 @@ function checkwinner(userSel, cpuSel){
         // alert("Has Ganado");
     }
      else if(userSel == cpuSel){
+       
         respuesta ="EMPATE";
 
     } else{
